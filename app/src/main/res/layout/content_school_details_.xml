@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/grey_box"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_overview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:text="Overview"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/fonts_medium"
+                android:gravity="center"/>
+
+            <View
+                android:id="@+id/view_overview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="#AAA4A4"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_facilities"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:text="Facilities"
+                android:textStyle="bold"
+                android:textColor="#3C3B3B"
+                android:fontFamily="@font/fonts_medium"
+                android:gravity="center"/>
+
+            <View
+                android:id="@+id/view_facilities"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:background="@color/colorPrimary"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="#AAA4A4"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:text="Reviews"
+                android:textStyle="bold"
+                android:textColor="#3C3B3B"
+                android:fontFamily="@font/fonts_medium"
+                android:gravity="center"/>
+
+            <View
+                android:id="@+id/view_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:background="@color/colorPrimary"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/_35sdp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/red_background"
+                    android:padding="@dimen/_3sdp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/phone"
+                        app:tint="#2381CC"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Call"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textColor="#2381CC"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/_35sdp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/red_background"
+                    android:padding="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/direction"
+                        app:tint="#2381CC"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Direction"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textStyle="bold"
+                        android:textColor="#2381CC"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_admission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/green_box"
+                android:text="Admission Open Now"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:fontFamily="@font/fonts_medium"/>
+
+            <LinearLayout
+                android:id="@+id/linear_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_8sdp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.6"
+                                android:layout_height="wrap_content"
+                                android:text="Address:"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1.4"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/_5sdp"
+                                android:text="488, Ajoy Nagar, Eastern Metropolitan By-Pass Near Peerless Hospital, behind Satyajit Ray Film Institution, Kolkata, West Bengal 700094"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textSize="13sp"
+                                android:textStyle="normal"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginHorizontal="@dimen/_3sdp"
+                            android:background="#EFEDED"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.6"
+                                android:layout_height="wrap_content"
+                                android:text="Head of the School:"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1.4"
+                                android:layout_marginHorizontal="@dimen/_5sdp"
+                                android:layout_height="wrap_content"
+                                android:text="Mrs. Aruna Goshwami(Principal)"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textSize="13sp"
+                                android:textStyle="normal"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginHorizontal="@dimen/_3sdp"
+                            android:background="#EFEDED"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6"
+                                android:fontFamily="@font/fonts_medium"
+                                android:text="Year of Establishment:"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/_5sdp"
+                                android:layout_weight="1.4"
+                                android:fontFamily="@font/fonts_medium"
+                                android:text="1842"
+                                android:textSize="13sp"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginHorizontal="@dimen/_3sdp"
+                            android:background="#EFEDED"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.6"
+                                android:layout_height="wrap_content"
+                                android:text="Afiliated to:"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1.4"
+                                android:layout_marginHorizontal="@dimen/_5sdp"
+                                android:layout_height="wrap_content"
+                                android:text="Council for the Indian School Certificate Examinations"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textSize="13sp"
+                                android:textStyle="normal"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginHorizontal="@dimen/_3sdp"
+                            android:background="#EFEDED"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.6"
+                                android:layout_height="wrap_content"
+                                android:text="Phone number:"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1.4"
+                                android:layout_marginHorizontal="@dimen/_5sdp"
+                                android:layout_height="wrap_content"
+                                android:text="033-22293565"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textSize="13sp"
+                                android:textStyle="normal"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginHorizontal="@dimen/_3sdp"
+                            android:background="#EFEDED"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.6"
+                                android:layout_height="wrap_content"
+                                android:text="Email id:"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1.4"
+                                android:layout_marginHorizontal="@dimen/_5sdp"
+                                android:layout_height="wrap_content"
+                                android:text="loretohouse.school@gmail.com"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textSize="13sp"
+                                android:textStyle="normal"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginHorizontal="@dimen/_3sdp"
+                            android:background="#EFEDED"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.6"
+                                android:layout_height="wrap_content"
+                                android:text="Website:"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1.4"
+                                android:layout_marginHorizontal="@dimen/_5sdp"
+                                android:layout_height="wrap_content"
+                                android:text="www.loretohousekolkata.com"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textSize="13sp"
+                                android:textStyle="normal"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginHorizontal="@dimen/_3sdp"
+                            android:background="#EFEDED"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.6"
+                                android:layout_height="wrap_content"
+                                android:text="Medium:"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1.4"
+                                android:layout_marginHorizontal="@dimen/_5sdp"
+                                android:layout_height="wrap_content"
+                                android:text="English"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textSize="13sp"
+                                android:textStyle="normal"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginHorizontal="@dimen/_3sdp"
+                            android:background="#EFEDED"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.6"
+                                android:layout_height="wrap_content"
+                                android:text="School Timing:"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1.4"
+                                android:layout_marginHorizontal="@dimen/_5sdp"
+                                android:layout_height="wrap_content"
+                                android:text="Monday to Friday 7:40 am - 3:40 pm"
+                                android:fontFamily="@font/fonts_medium"
+                                android:textSize="13sp"
+                                android:textStyle="normal"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/dot"
+                        app:tint="@color/colorPrimaryDark"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:text="School Faculties"
+                        android:typeface="serif"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rv_faculty"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/dot"
+                        app:tint="@color/colorPrimaryDark"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:text="School Awards"
+                        android:typeface="serif"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rv_awards"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_facilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/dot"
+                        app:tint="@color/colorPrimaryDark"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:text="School Facilities:"
+                        android:typeface="serif"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rv_facility"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:text="Why Choose Us?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15sp"
+                    android:typeface="serif" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:text="We are an IB school that understands parent’s requirements and concerns and hence believe in giving children value –based education.
+Our aim is to make students physically strong, mentally alert and spiritually elevated.
+We practice integrated learning and holistic development to ensure that along with education, students develop life-skills, participate in sports and reach their full potential.
+We pride ourselves in being amongst the few schools who emphasize upon, practice and encourage Indian values, ethos and traditions while nurturing future global citizens.
+Our infrastructure, amenities and unique curriculum sets apart from other institutes.Providing a loving,safe and disciplined environment that promotes innovation,creativity and learning,Vishwashanti Gurukul is your child’s home away from home."
+                    android:textStyle="normal"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/fonts_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:text="Add Rating"
+                        android:textAllCaps="true"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textColor="#000"
+                        android:layout_marginLeft="@dimen/_8sdp"/>
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Write A Review"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textAllCaps="true"
+                        android:textSize="12sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"/>
+
+                    <EditText
+                        android:id="@+id/edit_review"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:gravity="start"
+                        android:maxLines="5"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@drawable/grey_box"/>
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        android:background="@drawable/green_box"
+                        android:layout_marginVertical="@dimen/_15sdp"
+                        android:layout_width="@dimen/_180sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:text="Submit"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textColor="#fff"
+                        android:textAllCaps="false"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="#DCDADA"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:id="@+id/rv_reviews"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

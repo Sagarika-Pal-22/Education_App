@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F3F3"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/_3sdp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardBackgroundColor="#fff"
+                android:layout_marginHorizontal="@dimen/_10sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bus Number"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:fontFamily="@font/fonts_medium"
+                            android:textStyle="normal"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4321Isd"
+                            android:fontFamily="@font/fonts_medium"
+                            android:textStyle="normal"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bus Driver:"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:fontFamily="@font/fonts_medium"
+                            android:textStyle="normal"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vikram Routh"
+                            android:fontFamily="@font/fonts_medium"
+                            android:textStyle="normal"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Contact No:"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:fontFamily="@font/fonts_medium"
+                            android:textStyle="normal"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0987654321"
+                            android:fontFamily="@font/fonts_medium"
+                            android:textStyle="normal"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bus Timing:"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:fontFamily="@font/fonts_medium"
+                            android:textStyle="normal"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="21:10 am"
+                            android:fontFamily="@font/fonts_medium"
+                            android:textStyle="normal"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="@dimen/_3sdp">
+                <LinearLayout
+                    android:id="@+id/linear_route"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:text="Bus Routes"
+                        android:fontFamily="@font/fonts_medium"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:text="Patuli (Starting Point)"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textColor="#000"
+                        android:textStyle="normal"
+                        android:textSize="15sp"/>
+                    <View
+                        android:layout_width="@dimen/_5sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/dotted_line"
+                        android:layout_marginHorizontal="@dimen/_20sdp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:text="Peerless"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textColor="#000"
+                        android:textStyle="normal"
+                        android:textSize="15sp"/>
+                    <View
+                        android:layout_width="@dimen/_5sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/dotted_line"
+                        android:layout_marginHorizontal="@dimen/_20sdp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:text="Ruby More"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textColor="#000"
+                        android:textStyle="normal"
+                        android:textSize="15sp"/>
+                    <View
+                        android:layout_width="@dimen/_5sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/dotted_line"
+                        android:layout_marginHorizontal="@dimen/_20sdp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:text="VIP Bazar"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textColor="#000"
+                        android:textStyle="normal"
+                        android:textSize="15sp"/>
+                    <View
+                        android:layout_width="@dimen/_5sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/dotted_line"
+                        android:layout_marginHorizontal="@dimen/_20sdp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:text="Science City"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textColor="#000"
+                        android:textStyle="normal"
+                        android:textSize="15sp"/>
+                    <View
+                        android:layout_width="@dimen/_5sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/dotted_line"
+                        android:layout_marginHorizontal="@dimen/_20sdp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:text="Chingri Ghata"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textColor="#000"
+                        android:textStyle="normal"
+                        android:textSize="15sp"/>
+                    <View
+                        android:layout_width="@dimen/_5sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/dotted_line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:text="Nicco Park (Your Destination)"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textColor="#000"
+                        android:textStyle="normal"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

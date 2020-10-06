@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ediary_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/sent_box"
+        android:textColor="#000"
+        android:lineSpacingExtra="@dimen/_3sdp"
+        android:text="Thank you for your concern Maam. I will try to make her understand and tell to keep her attentive during the class."
+        android:fontFamily="@font/fonts_medium"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:gravity="end"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sent at:"
+            android:fontFamily="@font/fonts_medium"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/sent_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:05 pm"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:fontFamily="@font/fonts_medium"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

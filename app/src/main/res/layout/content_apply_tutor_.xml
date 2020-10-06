@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_capture"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/profile" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Add profile photo"
+                android:fontFamily="@font/fonts_medium"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:background="#E91E63"/>
+
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Name"
+        android:textColor="#3C3B3B"
+        android:fontFamily="@font/fonts_medium"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:fontFamily="@font/fonts_medium"
+        android:background="@drawable/grey_box"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:hint="Enter name"
+        android:textSize="12sp"
+        android:paddingLeft="@dimen/_10sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Contact No"
+        android:textColor="#3C3B3B"
+        android:fontFamily="@font/fonts_medium"/>
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:fontFamily="@font/fonts_medium"
+        android:background="@drawable/grey_box"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:hint="Enter no"
+        android:textSize="12sp"
+        android:paddingLeft="@dimen/_10sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Email Id"
+        android:textColor="#3C3B3B"
+        android:fontFamily="@font/fonts_medium"/>
+    <EditText
+        android:id="@+id/email_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:fontFamily="@font/fonts_medium"
+        android:background="@drawable/grey_box"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:hint="Enter email id"
+        android:textSize="12sp"
+        android:paddingLeft="@dimen/_10sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Subject 1"
+        android:textColor="#3C3B3B"
+        android:fontFamily="@font/fonts_medium"/>
+    <EditText
+        android:id="@+id/subj_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:fontFamily="@font/fonts_medium"
+        android:background="@drawable/grey_box"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:hint="Enter subj 1"
+        android:textSize="12sp"
+        android:paddingLeft="@dimen/_10sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Subject 2"
+        android:textColor="#3C3B3B"
+        android:fontFamily="@font/fonts_medium"/>
+    <EditText
+        android:id="@+id/subj_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:fontFamily="@font/fonts_medium"
+        android:background="@drawable/grey_box"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:hint="Enter subj 2"
+        android:textSize="12sp"
+        android:paddingLeft="@dimen/_10sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Fee/Charges Details"
+                android:textColor="#3C3B3B"
+                android:fontFamily="@font/fonts_medium"/>
+            <EditText
+                android:id="@+id/fee_details"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/fonts_medium"
+                android:background="@drawable/grey_box"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:hint="Enter fee details"
+                android:textSize="12sp"
+                android:paddingLeft="@dimen/_10sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="No of Years of Experience"
+        android:textColor="#3C3B3B"
+        android:fontFamily="@font/fonts_medium"/>
+    <EditText
+        android:id="@+id/years_exp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:fontFamily="@font/fonts_medium"
+        android:background="@drawable/grey_box"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:hint="Enter your experience"
+        android:textSize="12sp"
+        android:paddingLeft="@dimen/_10sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Add Your Achievements"
+        android:textColor="#3C3B3B"
+        android:fontFamily="@font/fonts_medium"/>
+    <EditText
+        android:id="@+id/achievement"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:fontFamily="@font/fonts_medium"
+        android:background="@drawable/grey_box"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:hint="Enter achievement"
+        android:textSize="12sp"
+        android:paddingLeft="@dimen/_10sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Full Adress"
+        android:textColor="#3C3B3B"
+        android:fontFamily="@font/fonts_medium"/>
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:fontFamily="@font/fonts_medium"
+        android:background="@drawable/grey_box"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:hint="Enter address"
+        android:textSize="12sp"
+        android:paddingLeft="@dimen/_10sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Select Password"
+                android:textColor="#3C3B3B"
+                android:fontFamily="@font/fonts_medium"/>
+            <EditText
+                android:id="@+id/select_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/fonts_medium"
+                android:background="@drawable/grey_box"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:hint="Enter password"
+                android:textSize="12sp"
+                android:paddingLeft="@dimen/_10sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Re-Enter Password"
+                android:textColor="#3C3B3B"
+                android:fontFamily="@font/fonts_medium"/>
+            <EditText
+                android:id="@+id/re_enter_pass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/fonts_medium"
+                android:background="@drawable/grey_box"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:hint="Re-Enter password "
+                android:textSize="12sp"
+                android:paddingLeft="@dimen/_10sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/edit_id_proof"
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#fff"
+                    android:hint="Upload Your Resume"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textSize="14sp"
+                    android:gravity="center|start"
+                    android:contextClickable="false" />
+                <Button
+                    android:id="@+id/btn_select_file"
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:background="@drawable/login_box"
+                    android:layout_gravity="center"
+                    android:text="Select File"
+                    android:textColor="#fff"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textSize="12sp"/>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Other Photos of Institution"
+                android:textColor="#3C3B3B"
+                android:fontFamily="@font/fonts_medium"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_institution"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/profile" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:text="Add"
+                    android:fontFamily="@font/fonts_medium"
+                    android:textColor="#fff"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:background="#E91E63"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/aply_submit"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/green_box"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:fontFamily="@font/fonts_medium"/>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

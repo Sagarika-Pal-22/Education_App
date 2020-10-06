@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/class_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:00 am"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:fontFamily="@font/fonts_medium"/>
+            <TextView
+                android:id="@+id/class_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:45 am"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:fontFamily="@font/fonts_medium"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_back"
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/_5sdp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_subj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:text="English Literature"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:fontFamily="@font/fonts_medium"/>
+            <TextView
+                android:id="@+id/text_tchr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_1sdp"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="#000"
+                android:fontFamily="@font/fonts_medium"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

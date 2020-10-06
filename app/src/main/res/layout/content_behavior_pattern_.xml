@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/project_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:text="How students behave in a classroom."
+                android:fontFamily="@font/fonts_medium"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:src="@drawable/behaviour"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:text="Behavior"
+                android:fontFamily="@font/fonts_medium"
+                android:textSize="14sp"
+                android:textColor="#05A193"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/fonts_medium"
+                android:text="Children learn behavior by watching and imitating others. Many types of behavior detract from learning. These include talking out of turn, being out of the seat without permission, not paying attention and disrupting other students by making noise or touching them. "
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:text="Rewards"
+                android:fontFamily="@font/fonts_medium"
+                android:textSize="14sp"
+                android:textColor="#05A193"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/fonts_medium"
+                android:text="Some rewards for good behavior, such as prizes, extra recess or stickers on a chart. Students learn they will get something they want if they behave in a certain way, but they don't always learn that behaving in a certain way is its own reward. This can prevent students from consistently using the desired behavior that promotes learning."
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:text="Punishment"
+                android:fontFamily="@font/fonts_medium"
+                android:textSize="14sp"
+                android:textColor="#05A193"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/fonts_medium"
+                android:text="Some students respond to punishment. They stop using unacceptable behavior if they know they'll face consequences for breaking the rules. Students who are verbally corrected, assigned extra work, miss recess or are sent to the principal's office as punishment often learn to lie or cheat to avoid punishment."
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

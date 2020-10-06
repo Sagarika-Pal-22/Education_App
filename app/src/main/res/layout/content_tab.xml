@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/btn_class"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:gravity="center"
+                        android:text="My Class"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textAllCaps="false"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="#fff"/>
+
+                    <TextView
+                        android:id="@+id/btn_perfomance"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:background="@color/greyL"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:text="My Performance"
+                        android:padding="@dimen/_2sdp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textAllCaps="false"/>
+
+                    <TextView
+                        android:id="@+id/btn_exams"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@color/greyL"
+                        android:text="My Exams"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textAllCaps="false"/>
+
+                    <TextView
+                        android:id="@+id/btn_fees"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@color/greyL"
+                        android:text="My Fees"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textAllCaps="false"/>
+
+                    <TextView
+                        android:id="@+id/btn_transport"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@color/greyL"
+                        android:text="Transport System"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textAllCaps="false"/>
+
+                <TextView
+                    android:id="@+id/btn_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:background="@color/greyL"
+                    android:text="My Profile"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/fonts_medium"
+                    android:textAllCaps="false"/>
+
+                <TextView
+                    android:id="@+id/btn_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:background="@color/greyL"
+                    android:text="History/Log"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/fonts_medium"
+                    android:textAllCaps="false"/>
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:orientation="vertical"
+                android:layout_marginVertical="@dimen/_5sdp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    android:layout_marginHorizontal="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rv_myClass"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rv_myPerformance"
+                        android:visibility="gone"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rv_myExams"
+                            android:visibility="gone"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rv_myFees"
+                            android:visibility="gone"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rv_transport"
+                            android:visibility="gone"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rv_myProfile"
+                            android:visibility="gone"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rv_history"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>

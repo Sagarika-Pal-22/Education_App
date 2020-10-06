@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Education_App</string>
+    <string name="Google_API_Key" translatable="false">AIzaSyDR2L35esFi-RdDHaLHvgN9Mo6qg0YqSF4</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_books">Educational Books</string>
+    <string name="menu_school">My School</string>
+    <string name="menu_tutor">Tutors</string>
+    <string name="menu_jobs">Teacher Jobs</string>
+    <string name="menu_supply">Supply Partner</string>
+    <string name="menu_coaching">Nearby Coachings</string>
+    <string name="menu_privateTutors">Private Tutors</string>
+    <string name="menu_nearby_school">Nearby Schools</string>
+    <string name="menu_invite_earn">Invite and Earn</string>
+    <string name="menu_order_history">Order History</string>
+    <string name="menu_order_track">Track Order</string>
+    <string name="menu_favourite">Favourites</string>
+    <string name="menu_store">Xpertq Store</string>
+
+
+    <string name="Open">open</string>
+    <string name="Close">close</string>
+    <string name="title_activity_school_details_">SchoolDetails_Activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_book_detyails_">Book Info</string>
+    <string name="title_activity_track_order_details_">Track Order</string>
+    <string name="title_activity_notification_">Notifications</string>
+    <string name="title_activity_admission_">Admission Form</string>
+    <string name="title_activity_coaching_details_">CoachingDetails_Activity</string>
+    <string name="title_activity_tutor_details_">Private Tutor</string>
+    <string name="title_activity_item_details_">Product Details</string>
+    <string name="title_activity_new_task_">New Task</string>
+    <string name="title_activity_solution_">Solutions</string>
+    <string name="title_activity_basic_">Basic_Activity</string>
+    <string name="title_activity_rate_teacher_">RateTeacher_Activity</string>
+    <string name="title_activity_communication_">Communication_Activity</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="title_activity_syllabus_">Syllabus_Activity</string>
+    <string name="title_activity_my_teacher_">MyTeacher_Activity</string>
+    <string name="title_activity_class_work_">ClassWork_Activity</string>
+    <string name="title_activity_home_work_">HomeWork_Activity</string>
+    <string name="title_activity_assign_project_">AssignProject_Activity</string>
+    <string name="title_activity_assign_">AssignActivity_Activity</string>
+    <string name="title_activity_leaves_">Leaves_Activity</string>
+    <string name="title_activity_holiday_list_">HolidayList_Activity</string>
+    <string name="title_activity_messages_">Messages_Activity</string>
+    <string name="title_activity_my_notification_">MyNotification_Activity</string>
+    <string name="title_activity_discussion_">Discussion_Activity</string>
+    <string name="title_activity_e_diary_">EDiary_Activity</string>
+    <string name="title_activity_live_class_">LiveClass_Activity</string>
+    <string name="title_activity_student_performance_graph_">StudentPerformanceGraph_Activity
+    </string>
+    <string name="title_activity_other_graph_">OtherActivityGraph_Activity</string>
+    <string name="title_activity_behavior_pattern_">BehaviorPattern_Activity</string>
+    <string name="title_activity_my_report_card_">MyReportCard_Activity</string>
+    <string name="title_activity_my_mark_sheet_">MyMarkSheet_Activity</string>
+    <string name="title_activity_attendance_">Attendance_Activity</string>
+    <string name="title_activity_exam_schedule_">ExamSchedule_Activity</string>
+    <string name="title_activity_exam_practice_test_">ExamPracticeTest_Activity</string>
+    <string name="title_activity_unit_test_schedule_">UnitTestSchedule_Activity</string>
+    <string name="title_activity_unit_test_practice_">UnitTestPractice_Activity</string>
+    <string name="title_activity_fee_structure_">FeeStructure_Activity</string>
+    <string name="title_activity_fee_notification_">FeeNotification_Activity</string>
+    <string name="title_activity_online_payment_">OnlinePayment_Activity</string>
+    <string name="title_activity_payment_history_">PaymentHistory_Activity</string>
+    <string name="title_activity_my_route_details_">MyRouteDetails_Activity</string>
+    <string name="title_activity_transport_fee_details_">TransportFeeDetails_Activity</string>
+    <string name="title_activity_bus_details_">BusDetails_Activity</string>
+    <string name="title_activity_live_track_bus_">LiveTrackBus_Activity</string>
+    <string name="title_activity_hit_s_o_s_">HitSOS_Activity</string>
+    <string name="title_activity_my_parent_details_">MyParentDetails_Activity</string>
+    <string name="title_activity_my_bio_">MyBio_Activity</string>
+    <string name="title_activity_all_payment_history_">AllPaymentHistory_Activity</string>
+    <string name="title_activity_product_purchase_history_">ProductPurchaseHistory_Activity</string>
+    <string name="title_activity_school_payment_history_">SchoolPaymentHistory_Activity</string>
+    <string name="title_activity_report_">Report_Activity</string>
+    <string name="title_activity_discussion_details_">DiscussionDetails_Activity</string>
+    <string name="title_activity_live_class__details_">LiveClass_Details_Activity</string>
+    <string name="title_activity_apply_tutor_">ApplyTutor_Activity</string>
+    <string name="title_activity_registered_teacher_">RegisteredTeacher_Activity</string>
+    <string name="title_activity_teacher_jobs_">TeacherJobs_Activity</string>
+    <string name="title_activity_job_description">JobDescriptionActivity</string>
+</resources>

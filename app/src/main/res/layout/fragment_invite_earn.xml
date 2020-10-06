@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D8F6F6"
+    android:orientation="vertical">
+    
+    <ImageView
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/refer_earn"
+        android:overScrollMode="always"
+        android:scaleType="fitXY"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refer now and earn upto Rs.500"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:typeface="monospace"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:text="Send a referal link to your friends via SMS/Email/Whatsapp"
+            android:textSize="14sp"
+            android:fontFamily="@font/fonts_medium"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:text="How does it work?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:fontFamily="@font/fonts_medium"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REFERRAL CODE"
+            android:textSize="15sp"
+            android:fontFamily="@font/fonts_medium"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"/>
+        <TextView
+            android:id="@+id/referral_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="XUYE895EW"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:fontFamily="@font/fonts_medium"
+            android:background="@drawable/dotted_box" />
+
+        <Button
+            android:id="@+id/btn_refer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REFER NOW"
+            android:textColor="#fff"
+            android:fontFamily="@font/fonts_medium"
+            android:background="@drawable/gradient"
+            android:layout_marginHorizontal="@dimen/_20sdp"/>
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

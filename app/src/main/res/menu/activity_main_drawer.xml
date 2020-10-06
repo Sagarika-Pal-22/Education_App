@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/nav_store"
+            android:title="@string/menu_store"
+            android:icon="@drawable/store"/>
+
+        <item
+            android:id="@+id/nav_school"
+            android:title="@string/menu_school"
+            android:icon="@drawable/school"/>
+
+        <item
+            android:id="@+id/nav_tutor"
+            android:title="@string/menu_tutor"
+            android:icon="@drawable/person"/>
+
+        <item
+            android:id="@+id/nav_jobs"
+            android:title="@string/menu_jobs"
+            android:icon="@drawable/person"/>
+
+        <item
+            android:id="@+id/nav_supply"
+            android:title="@string/menu_supply"
+            android:icon="@drawable/person"/>
+
+        <item
+            android:id="@+id/nav_books"
+            android:title="@string/menu_books"
+            android:icon="@drawable/homework"/>
+
+        <item
+            android:id="@+id/nav_coaching"
+            android:title="@string/menu_coaching"
+            android:icon="@drawable/coaching"/>
+
+        <item
+            android:id="@+id/nav_privateTutors"
+            android:title="@string/menu_privateTutors"
+            android:icon="@drawable/person"/>
+
+        <item
+            android:id="@+id/nav_nearby_school"
+            android:title="@string/menu_nearby_school"
+            android:icon="@drawable/coaching"/>
+
+        <item
+            android:id="@+id/nav_invite_earn"
+            android:title="@string/menu_invite_earn"
+            android:icon="@drawable/invite"/>
+
+        <item
+            android:id="@+id/nav_favourite"
+            android:title="@string/menu_favourite"
+            android:icon="@drawable/favrt"/>
+
+        <item
+            android:id="@+id/nav_order_history"
+            android:title="@string/menu_order_history"
+            android:icon="@drawable/notice"/>
+
+        <item
+            android:id="@+id/nav_order_track"
+            android:title="@string/menu_order_track"
+            android:icon="@drawable/track"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout"
+            android:icon="@drawable/logout"/>
+    </group>
+</menu>

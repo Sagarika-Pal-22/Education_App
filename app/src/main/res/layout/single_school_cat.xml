@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_4sdp"
+    android:layout_marginVertical="@dimen/_10sdp"
+    android:id="@+id/school_cat"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_img"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:cardBackgroundColor="#FFE3E8"
+            app:cardCornerRadius="@dimen/_20sdp">
+            <ImageView
+                android:id="@+id/img_cats"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_10sdp"
+                app:tint="@color/colorPrimaryDark"
+                android:scaleType="fitXY"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nearby"
+            android:fontFamily="@font/fonts_medium"
+            android:textSize="12sp"
+            android:textColor="#3C3B3B"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"/>
+    </LinearLayout>
+
+</LinearLayout>

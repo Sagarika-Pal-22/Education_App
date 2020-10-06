@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardUseCompatPadding="true"
+                android:elevation="@dimen/_5sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/task_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:text="Assignment:1"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textSize="17sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+                    <TextView
+                        android:id="@+id/subj_tchr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="By Sudeshna Lata"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textSize="12sp"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:text="Subject:"
+                            android:fontFamily="@font/fonts_medium"
+                            android:textSize="14sp"
+                            android:textColor="#0D25AA" />
+                        <TextView
+                            android:id="@+id/subj_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Maths"
+                            android:fontFamily="@font/fonts_medium"
+                            android:textSize="14sp"
+                            android:textColor="#000"/>
+                    </LinearLayout>
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/assignment"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginVertical="@dimen/_5sdp"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginHorizontal="@dimen/_10sdp"-->
+<!--                            android:text="Date of assignment:"-->
+<!--                            android:fontFamily="@font/fonts_medium"-->
+<!--                            android:textSize="14sp"-->
+<!--                            android:textColor="#0D25AA" />-->
+<!--                        <TextView-->
+<!--                            android:id="@+id/assgn_date"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="8-09-2020"-->
+<!--                            android:fontFamily="@font/fonts_medium"-->
+<!--                            android:textSize="14sp"-->
+<!--                            android:textColor="#000" />-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/submission"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginHorizontal="@dimen/_10sdp"-->
+<!--                            android:text="Date of submission:"-->
+<!--                            android:fontFamily="@font/fonts_medium"-->
+<!--                            android:textSize="14sp"-->
+<!--                            android:textColor="#0D25AA"/>-->
+<!--                        <TextView-->
+<!--                            android:id="@+id/sbmsn_date"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="10-09-2020"-->
+<!--                            android:fontFamily="@font/fonts_medium"-->
+<!--                            android:textSize="14sp"-->
+<!--                            android:textColor="#000"/>-->
+<!--                    </LinearLayout>-->
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:id="@+id/text_view"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:gravity="center"
+                android:background="#3FA33C"
+                android:text="View Task"
+                android:fontFamily="@font/fonts_medium"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:layout_marginTop="@dimen/_5sdp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

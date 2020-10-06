@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_live"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_20sdp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_60sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="@dimen/_3sdp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="@dimen/_160sdp"
+                android:id="@+id/img_View"
+                android:scaleType="fitXY"
+                android:src="@drawable/faculty"/>
+            <RelativeLayout
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="@dimen/_160sdp"
+                android:background="#000"
+                android:alpha="0.5"/>
+            <ImageView
+                android:id="@+id/img_live"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/live_back"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_15sdp"/>
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:src="@drawable/dot"
+                app:tint="#fff"
+                android:layout_marginTop="@dimen/_38sdp"
+                android:layout_marginLeft="@dimen/_20sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIVE"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:fontFamily="@font/fonts_medium"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_35sdp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non-verbal reasoning"
+            android:textStyle="bold"
+            android:fontFamily="@font/fonts_medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/text_details"
+        android:layout_below="@+id/linear"
+        android:layout_toRightOf="@id/card"
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="wrap_content"
+        android:text="Crash Course on Reasoning"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textColor="#000"
+        android:fontFamily="@font/fonts_medium"
+        android:textSize="15sp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/text_details"
+        android:layout_toRightOf="@id/card"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/start_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start at"
+            android:fontFamily="@font/fonts_medium"
+            android:textColor="#000"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:00 AM"
+            android:fontFamily="@font/fonts_medium"
+            android:textColor="#000"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tchr_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fonts_medium"
+        android:text="Kalki Seth"
+        android:textSize="12sp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_toRightOf="@id/card"
+        android:layout_below="@id/linear_1"
+        android:textColor="#000"
+        android:layout_marginLeft="@dimen/_10sdp"/>
+    </LinearLayout>
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#D3CFCF"
+        android:layout_below="@id/tchr_name"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:layout_marginLeft="@dimen/_3sdp" />
+
+</LinearLayout>

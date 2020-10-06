@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:background="@drawable/chat_box"
+            android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_complaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="#000"
+                    android:text="It’s the conversation we all dread: telling a parent their child a) is failing a subject, b) needs to be tested for a disability, c) doesn’t have any friends. So you are requested to have a lookin this matter for the sake of your daughter's future...Thank you."
+                    android:fontFamily="@font/fonts_medium"
+                    android:textSize="12sp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Received at:"
+            android:fontFamily="@font/fonts_medium"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:05 pm"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:fontFamily="@font/fonts_medium"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/rv_sent"/>
+</LinearLayout>

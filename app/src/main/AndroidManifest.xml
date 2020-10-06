@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.education_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".JobDescriptionActivity"
+            android:label="@string/title_activity_job_description"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".TeacherJobs_Activity"
+            android:label="@string/title_activity_teacher_jobs_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisteredTeacher_Activity"
+            android:label="@string/title_activity_registered_teacher_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ApplyTutor_Activity"
+            android:label="@string/title_activity_apply_tutor_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TutorLogin_Activity" />
+        <activity
+            android:name=".LiveClass_Details_Activity"
+            android:label="@string/title_activity_live_class__details_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DiscussionDetails_Activity"
+            android:label="@string/title_activity_discussion_details_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Report_Activity"
+            android:label="@string/title_activity_report_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SchoolPaymentHistory_Activity"
+            android:label="@string/title_activity_school_payment_history_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProductPurchaseHistory_Activity"
+            android:label="@string/title_activity_product_purchase_history_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllPaymentHistory_Activity"
+            android:label="@string/title_activity_all_payment_history_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyBio_Activity"
+            android:label="@string/title_activity_my_bio_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyParentDetails_Activity"
+            android:label="@string/title_activity_my_parent_details_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HitSOS_Activity"
+            android:label="@string/title_activity_hit_s_o_s_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LiveTrackBus_Activity"
+            android:label="@string/title_activity_live_track_bus_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BusDetails_Activity"
+            android:label="@string/title_activity_bus_details_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TransportFeeDetails_Activity"
+            android:label="@string/title_activity_transport_fee_details_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyRouteDetails_Activity"
+            android:label="@string/title_activity_my_route_details_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PaymentHistory_Activity"
+            android:label="@string/title_activity_payment_history_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OnlinePayment_Activity"
+            android:label="@string/title_activity_online_payment_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FeeNotification_Activity"
+            android:label="@string/title_activity_fee_notification_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FeeStructure_Activity"
+            android:label="@string/title_activity_fee_structure_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UnitTestPractice_Activity"
+            android:label="@string/title_activity_unit_test_practice_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UnitTestSchedule_Activity"
+            android:label="@string/title_activity_unit_test_schedule_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExamPracticeTest_Activity"
+            android:label="@string/title_activity_exam_practice_test_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExamSchedule_Activity"
+            android:label="@string/title_activity_exam_schedule_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Attendance_Activity"
+            android:label="@string/title_activity_attendance_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Adapter.MyMarkSheet_Activity"
+            android:label="@string/title_activity_my_mark_sheet_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyReportCard_Activity"
+            android:label="@string/title_activity_my_report_card_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BehaviorPattern_Activity"
+            android:label="@string/title_activity_behavior_pattern_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OtherActivityGraph_Activity"
+            android:label="@string/title_activity_other_graph_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StudentPerformanceGraph_Activity"
+            android:label="@string/title_activity_student_performance_graph_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LiveClass_Activity"
+            android:label="@string/title_activity_live_class_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EDiary_Activity"
+            android:label="@string/title_activity_e_diary_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Discussion_Activity"
+            android:label="@string/title_activity_discussion_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyNotification_Activity"
+            android:label="@string/title_activity_my_notification_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Messages_Activity"
+            android:label="@string/title_activity_messages_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HolidayList_Activity"
+            android:label="@string/title_activity_holiday_list_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Leaves_Activity"
+            android:label="@string/title_activity_leaves_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AssignActivity_Activity"
+            android:label="@string/title_activity_assign_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AssignProject_Activity"
+            android:label="@string/title_activity_assign_project_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeWork_Activity"
+            android:label="@string/title_activity_home_work_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ClassWork_Activity"
+            android:label="@string/title_activity_class_work_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyTeacher_Activity"
+            android:label="@string/title_activity_my_teacher_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Syllabus_Activity"
+            android:label="@string/title_activity_syllabus_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyTabsActivity"
+            android:label="@string/title_activity_tab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Communication_Activity"
+            android:label="@string/title_activity_communication_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RateTeacher_Activity"
+            android:label="@string/title_activity_rate_teacher_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Basic_Activity"
+            android:label="@string/title_activity_basic_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Solution_Activity"
+            android:label="@string/title_activity_solution_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewTask_Activity"
+            android:label="@string/title_activity_new_task_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ItemDetails_Activity"
+            android:label="@string/title_activity_item_details_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TutorDetails_Activity"
+            android:label="@string/title_activity_tutor_details_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CoachingDetails_Activity"
+            android:label="@string/title_activity_coaching_details_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admission_Activity"
+            android:label="@string/title_activity_admission_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Notification_Activity"
+            android:label="@string/title_activity_notification_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Profile_Activity" />
+        <activity android:name=".Registration_Activity" />
+        <activity android:name=".Login_Activity" />
+        <activity android:name=".Splash_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TrackOrderDetails_Activity"
+            android:label="@string/title_activity_track_order_details_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BookDetyails_Activity"
+            android:label="@string/title_activity_book_detyails_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SchoolDetails_Activity"
+            android:label="@string/title_activity_school_details_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/Google_API_Key" />
+    </application>
+
+</manifest>

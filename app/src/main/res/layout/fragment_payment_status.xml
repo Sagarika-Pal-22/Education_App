@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:text="Next Due Amount"
+        android:fontFamily="@font/fonts_medium"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:text="(As on 2015-12-15)"
+        android:fontFamily="@font/fonts_medium"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:layout_marginVertical="@dimen/_5sdp">
+<!--        <ImageView-->
+<!--            android:layout_width="@dimen/_10sdp"-->
+<!--            android:layout_height="@dimen/_10sdp"-->
+<!--            android:src="@drawable/red_ruppee"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:text="Rs. 12000/-"
+            android:fontFamily="@font/fonts_medium"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#F41B0B"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+        <Button
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/green_box"
+            android:text="Pay"
+            android:textColor="#fff"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:background="#FFEFEFEF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:text="Total Due Amount"
+        android:fontFamily="@font/fonts_medium"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="#000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:layout_marginVertical="@dimen/_5sdp">
+<!--        <ImageView-->
+<!--            android:layout_width="@dimen/_10sdp"-->
+<!--            android:layout_height="@dimen/_10sdp"-->
+<!--            android:src="@drawable/red_ruppee"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:text="Rs. 12000/-"
+            android:fontFamily="@font/fonts_medium"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#F41B0B"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+            <Button
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/green_box"
+                android:text="Pay"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:background="#FFEFEFEF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:text="Paid Amount"
+        android:fontFamily="@font/fonts_medium"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:text="(As on 2015-10-07)"
+        android:fontFamily="@font/fonts_medium"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:layout_marginVertical="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:text="Rs. 12000/-"
+            android:fontFamily="@font/fonts_medium"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#F41B0B"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5sdp"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:background="#FFEFEFEF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:text="Payment History"
+        android:fontFamily="@font/fonts_medium"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#05A193"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:id="@+id/rv_pymnt_hstry"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
