@@ -73,6 +73,16 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/fonts_medium"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:text="Jobs"/>
+
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/recycle_jobs_details"
                         android:layout_width="match_parent"
